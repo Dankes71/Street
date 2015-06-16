@@ -74,7 +74,7 @@ public class MapsActivity extends FragmentActivity {
         if (location!=null){
             LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
 
-            mMap.addMarker(new MarkerOptions().position(latLng).title("Start"));
+            mMap.addMarker(new MarkerOptions().position(latLng).title("POINT"));
         }
     }
 }
