@@ -1,13 +1,11 @@
 package com.example.heldan0911.street;
 
-import android.content.Context;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
-import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -74,7 +72,7 @@ public class MapsActivity extends FragmentActivity {
         if (location!=null){
             LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
 
-            mMap.addMarker(new MarkerOptions().position(latLng).title("POINT"));
+            mMap.addMarker(new MarkerOptions().position(latLng).title("HIER BEGINNEN"));
         }
     }
 }
